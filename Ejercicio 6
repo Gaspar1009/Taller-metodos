@@ -1,0 +1,22 @@
+        public Estudiante(double nota) {
+        this.nota = nota;
+    }
+
+    public void mostrarBoletin() {
+        System.out.println("Nota del estudiante: " + this.nota);
+    }
+
+    public static double compararNotas(double n1, double n2) {
+        return Math.max(n1, n2);
+    }
+}
+
+public class Ejercicio06_EstadoVsInstancia {
+    public static void main(String[] args) {
+        Estudiante e1 = new Estudiante(4.2);
+        e1.mostrarBoletin();
+        
+        double mayor = Estudiante.compararNotas(3.9, 4.5);
+        System.out.println("La nota mayor es: " + mayor);
+    }
+}
