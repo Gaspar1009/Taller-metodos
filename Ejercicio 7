@@ -1,0 +1,12 @@
+public class Ejercicio07_PromedioClase {
+    public static double calcularPromedioClase(double[] calificaciones) {
+        double suma = 0;
+        for (double c : calificaciones) suma += c;
+        return suma / calificaciones.length;
+    }
+
+    public static void main(String[] args) {
+        double[] notas = {4.0, 3.5, 5.0, 4.2};
+        System.out.printf("Promedio del grupo: %.2f%n", calcularPromedioClase(notas));
+    }
+}
