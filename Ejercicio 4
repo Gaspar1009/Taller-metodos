@@ -1,0 +1,10 @@
+public class Ejercicio04_NumeroPar {
+    public static boolean esPar(int numero) {
+        return numero % 2 == 0;
+    }
+
+    public static void main(String[] args) {
+        int n = 8;
+        System.out.println("¿" + n + " es par? " + esPar(n));
+    }
+}
