@@ -1,0 +1,9 @@
+public class Ejercicio02_SaludoPersonalizado {
+    public static void saludarEstudiante(String nombre, int edad) {
+        System.out.printf("Hola %s, tienes %d años. ¡Bienvenido!%n", nombre, edad);
+    }
+
+    public static void main(String[] args) {
+        saludarEstudiante("María", 20);
+    }
+}
