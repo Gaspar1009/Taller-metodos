@@ -1,0 +1,16 @@
+import java.util.ArrayList
+
+    public static void main(String[] args) {
+        ArrayList<Producto> inventario = new ArrayList<>();
+        
+        agregarProducto(inventario, "Cuaderno", 5.2, 20);
+        agregarProducto(inventario, "Lápiz", 1.5, 50);
+        agregarProducto(inventario, "Borrador", 2.0, 15);
+
+        Ejercicio10_Inventario inv = new Ejercicio10_Inventario();
+        inv.mostrarInventario(inventario);
+
+        double total = calcularValorTotalInventario(inventario);
+        System.out.printf("Valor total del inventario: $%.2f%n", total);
+    }
+}
