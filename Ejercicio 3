@@ -1,0 +1,10 @@
+public class Ejercicio03_AreaRectangulo {
+    public static double calcularAreaRectangulo(double base, double altura) {
+        return base * altura;
+    }
+
+    public static void main(String[] args) {
+        double area = calcularAreaRectangulo(5.0, 3.5);
+        System.out.println("Área del rectángulo: " + area);
+    }
+}
